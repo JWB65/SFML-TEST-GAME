@@ -1,5 +1,5 @@
 #include "Character.hpp"
-#include "Fpscounter.hpp"
+#include "FpsCounter.hpp"
 
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
@@ -63,10 +63,11 @@ int main()
 
 		window.clear();
 
+		// Draw the sprite and text
 		window.draw(sprite);
 		window.draw(sf::Text("Hello SFML!", font, 30));
 
-		// Simulate 15 ms pause
+		// Simulate 15 ms pause as to get a frame rate of around 60
 		sf::sleep(sf::milliseconds(15)); 
 
 		sf::Time elapsed = clock.restart(); // Elapsed time since the last frame. Time counter back to 0
