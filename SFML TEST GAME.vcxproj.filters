@@ -18,7 +18,7 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="fpscounter.cpp">
+    <ClCompile Include="FpsCounter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="gameObject.cpp">
@@ -41,7 +41,7 @@
     <ClInclude Include="SpriteData.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="fpscounter.hpp">
+    <ClInclude Include="FpsCounter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="gameObject.hpp">
