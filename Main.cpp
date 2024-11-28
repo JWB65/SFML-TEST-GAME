@@ -14,10 +14,6 @@ int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF); //for detecting memory leak
 
-	int* p = new int[5];
-
-	sf::RenderWindow window(sf::VideoMode(1280, 720), "The game");
-
 	sf::Texture texture;
 	if (!texture.loadFromFile("dogg.jpg"))
 		return EXIT_FAILURE;
@@ -40,6 +36,7 @@ int main()
 		return EXIT_FAILURE;
 	music.play();
 
+	sf::RenderWindow window(sf::VideoMode(1280, 720), "The game");
 	window.create(sf::VideoMode(640, 480), "My SFML Game" /* ... */);
 
 	sf::Clock clock; // sf::Clock class to get keep timee
