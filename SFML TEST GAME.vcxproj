@@ -146,7 +146,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FpsCounter.cpp" />
-    <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="SpriteData.cpp" />
     <ClCompile Include="SpriteObject.cpp" />
@@ -154,7 +154,7 @@
   <ItemGroup>
     <ClInclude Include="Character.hpp" />
     <ClInclude Include="FpsCounter.hpp" />
-    <ClInclude Include="gameObject.hpp" />
+    <ClInclude Include="GameObject.hpp" />
     <ClInclude Include="SpriteData.hpp" />
     <ClInclude Include="SpriteObject.hpp" />
   </ItemGroup>

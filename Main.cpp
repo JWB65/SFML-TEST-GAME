@@ -7,16 +7,18 @@
 #include <crtdbg.h>
 
 // JAN: Some general changes: Capitalization of file names
-// JAN: Moved the globals to with the main function
+// JAN: Moved the globals variable to variable within the main function
 // JAN: Can not debug because we need to debug lib files for SFML
 
 int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF); //for detecting memory leak
 
+	// We can define the texture here and give a pointer to it to other objects - no memory leaks
 	sf::Texture texture;
-	if (!texture.loadFromFile("dogg.jpg"))
-		return EXIT_FAILURE;
+
+	//if (!texture.loadFromFile("dogg.jpg"))
+	//	return EXIT_FAILURE;
 
 	if (!texture.loadFromFile("head.png"))
 		return EXIT_FAILURE;
